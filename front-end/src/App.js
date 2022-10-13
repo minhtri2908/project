@@ -2,7 +2,6 @@ import './styles/css/bootstrap.min.css';
 import './styles/css/App.css';
 import Login from './page/login';
 import Home from './page/home';
-// const element = <img src={'./image/173281189.jpg'}></img>;
 import {
   BrowserRouter,
   Routes,

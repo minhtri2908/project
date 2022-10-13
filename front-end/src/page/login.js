@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { AuthContext } from '../contenr/AuthContext';
-import { connect } from 'react-redux';
+// import { AuthContext } from '../contenr/AuthContext';
 import axios from 'axios';
 import { BsFacebook, BsGoogle, BsTwitter, BsGithub } from 'react-icons/bs';
 import { useNavigate } from 'react-router-dom';
@@ -25,10 +24,10 @@ function Login() {
     }
     setJustifyActive(value);
   };
-  const [credentials, setCredentials] = useState({
-    username: undefined,
-    password: undefined,
-  });
+  // const [credentials, setCredentials] = useState({
+  //   username: undefined,
+  //   password: undefined,
+  // });
 
   // const { loading, error, dispatch } = useContext(AuthContext);
   // const navigate = useNavigate();
@@ -50,7 +49,7 @@ function Login() {
   //     dispatch({ type: 'LOGIN_FAIL', payload: error.response.data });
   //   }
   // };
-  const [username,setUsername] =useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   console.log({ username, email, password });
@@ -82,7 +81,7 @@ function Login() {
   };
   const handleregister = (e) => {
     e.preventDefault();
-    console.log({username, email, password });
+    console.log({ username, email, password });
     axios
       .post('/api/author/register', {
         username: username,

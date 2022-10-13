@@ -11,7 +11,7 @@ import path from 'path';
 
 //Create Port for Backend
 const app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 5000;
 dotenv.config();
 
 const connect = async () => {
@@ -52,5 +52,5 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   connect();
-  console.log('Server started at http://localhost:3000');
+  console.log('Server started at http://localhost:5000');
 });

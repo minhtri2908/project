@@ -1,6 +1,5 @@
 import '../styles/css/bootstrap.min.css';
 import './home.css';
-import logoweb from '../image/horizontal_on_white_by_logaster.png';
 import hinh1 from '../image/173281189.jpg';
 import hinh2 from '../image/1651729679291.jpg';
 import hinh3 from '../image/hinh1_dxxx.jpg';
