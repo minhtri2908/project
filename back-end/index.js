@@ -52,6 +52,5 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   connect();
-  console.log('Connected!');
-  console.log('http://localhost:3000/');
+  console.log('Server started at http://localhost:3000');
 });
